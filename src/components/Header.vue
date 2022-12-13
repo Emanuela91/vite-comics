@@ -62,23 +62,58 @@ export default {
 </script>
 
 <template>
-    <div class="logo">
-        <img src="../assets/img/dc-logo.png" alt="logoDC">
-    </div>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/dc-logo.png" alt="logoDC">
+        </div>
 
-    <nav>
-        <ul>
-            <li v-for="(link, index) in links" key="index">
-                <a :class="{ active: link.current }" :href="link.url">
-                    {{ link.text }}
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li v-for="(link, index) in links" key="index">
+                    <a :class="{ active: link.current }" :href="link.url">
+                        {{ link.text }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/general.scss' as*;
 @use '../styles/partials/variables' as*;
+@use '../styles/partials/mixins' as*;
+
+header {
+    padding: 20px 0;
+    @include between();
+
+    nav {
+        ul {
+            @include center();
+
+            li {
+                list-style: none;
+                margin-left: 15px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: $secondary;
+                    display: inline-block;
+                    line-height: 100px;
+                    font-weight: 600;
+
+                    &.active,
+                    &:hover {
+                        color: #0282f9;
+                        border-bottom: solid 5px #0282f9;
+                    }
+                }
+            }
+        }
+    }
+
+}
 </style>
