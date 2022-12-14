@@ -63,19 +63,21 @@ export default {
 
 <template>
     <header>
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="logoDC">
-        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="logoDC">
+            </div>
 
-        <nav>
-            <ul>
-                <li v-for="(link, index) in links" key="index">
-                    <a :class="{ active: link.current }" :href="link.url">
-                        {{ link.text }}
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in links" key="index">
+                        <a :class="{ active: link.current }" :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 </template>
@@ -87,28 +89,31 @@ export default {
 
 header {
     padding: 20px 0;
-    @include between();
 
-    nav {
-        ul {
-            @include center();
+    .container {
+        @include between();
 
-            li {
-                list-style: none;
-                margin-left: 15px;
+        nav {
+            ul {
+                @include center();
 
-                a {
-                    text-decoration: none;
-                    font-size: 12px;
-                    color: $secondary;
-                    display: inline-block;
-                    line-height: 100px;
-                    font-weight: 600;
+                li {
+                    list-style: none;
+                    margin-left: 15px;
 
-                    &.active,
-                    &:hover {
-                        color: #0282f9;
-                        border-bottom: solid 5px #0282f9;
+                    a {
+                        text-decoration: none;
+                        font-size: 12px;
+                        color: $secondary;
+                        display: inline-block;
+                        line-height: 100px;
+                        font-weight: 600;
+
+                        &.active,
+                        &:hover {
+                            color: #0282f9;
+                            border-bottom: solid 5px #0282f9;
+                        }
                     }
                 }
             }

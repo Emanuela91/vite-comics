@@ -6,19 +6,19 @@ export default {
   name: "App",
   components: {
     HeaderVue,
-    FooterVue,
+    FooterVue
   }
 }
 </script>
 
 <template>
-  <div class="container">
-    <HeaderVue />
-    <main>
+  <HeaderVue />
+  <main>
+    <div class="container">
       <h1>Content goes here!</h1>
-    </main>
-    <FooterVue />
-  </div>
+    </div>
+  </main>
+  <FooterVue />
 </template>
 
 <style lang="scss">
