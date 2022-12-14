@@ -55,6 +55,10 @@ export default {
                     <li>DC Power Visa</li>
                 </ul>
             </div>
+
+            <div class="DC">
+                <img src="../../assets/img/dc-logo-bg.png" alt="" srcset="">
+            </div>
         </div>
     </section>
 </template>
@@ -88,6 +92,17 @@ section {
                 }
             }
         }
+
+        .DC {
+            position: relative;
+            left: 350px;
+            bottom: 75px;
+
+            img {
+                height: 400px;
+            }
+        }
+
     }
 }
 </style>
