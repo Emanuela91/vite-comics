@@ -107,11 +107,31 @@ export default {
 @use '../styles/partials/variables' as*;
 
 section {
+    height: 600px;
     background-color: #1c1c1c;
+
+    span {
+        background-color: $fourth;
+        color: $primary;
+        padding: 10px;
+        font-weight: bold;
+    }
 
     .cards {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    button {
+        position: relative;
+        left: 40%;
+        bottom: -21px;
+        top: 25px;
+        padding: 5px 50px;
+        border: none;
+        background-color: $fourth;
+        color: $primary;
+        font-weight: bold;
     }
 }
 </style>
