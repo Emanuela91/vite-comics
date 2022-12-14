@@ -55,19 +55,12 @@ export default {
                     <li>DC Power Visa</li>
                 </ul>
             </div>
-
-
-
-
         </div>
     </section>
-
-
 </template>
 
 <style lang="scss" scoped>
 @use '../../styles/partials/variables' as*;
-@use '../../styles/partials/mixins' as*;
 
 section {
     background-image: url('../../assets/img/footer-bg.jpg');
@@ -96,7 +89,5 @@ section {
             }
         }
     }
-
-
 }
 </style>
