@@ -1,13 +1,13 @@
 <script>
 import TopFooterVue from './FooterContent/TopFooter.vue';
-// import MidFooterVue from './FooterContent/MidFooter.vue';
+import MidFooterVue from './FooterContent/MidFooter.vue';
 // import BotFooterVue from './FooterContent/BotFooter.vue';
 
 export default {
     name: "Footer",
     components: {
         TopFooterVue,
-        // MidFooterVue,
+        MidFooterVue,
         // BotFooterVue,
     }
 }
@@ -16,6 +16,7 @@ export default {
 <template>
     <footer>
         <TopFooterVue />
+        <MidFooterVue />
 
     </footer>
 </template>
