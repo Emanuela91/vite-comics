@@ -88,7 +88,9 @@ export default {
 @use '../styles/partials/mixins' as*;
 
 header {
-    padding: 20px 0;
+    img {
+        height: 85px;
+    }
 
     .container {
         @include between();

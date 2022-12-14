@@ -12,12 +12,14 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    min-height: 200px;
+    height: 400px;
 
     img {
         background-size: cover;
         height: 100%;
         width: 100%;
+        object-fit: cover;
+        object-position: 0% 0%;
     }
 }
 </style>
