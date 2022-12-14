@@ -108,5 +108,10 @@ export default {
 
 section {
     background-color: #1c1c1c;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 </style>
