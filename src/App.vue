@@ -2,14 +2,15 @@
 import HeaderVue from './components/Header.vue';
 import FooterVue from './components/Footer.vue';
 import JumbotronVue from './components/Jumbotron.vue';
+import MainVue from './components/Main.vue';
 
 export default {
   name: "App",
   components: {
     HeaderVue,
     JumbotronVue,
+    MainVue,
     FooterVue,
-
   }
 }
 </script>
@@ -18,9 +19,7 @@ export default {
   <HeaderVue />
   <main>
     <JumbotronVue />
-    <div class="container">
-      <h1>Content goes here!</h1>
-    </div>
+    <MainVue />
   </main>
   <FooterVue />
 </template>
